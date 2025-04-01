@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.TestCase.LoginPage_TestCases">
+        <methods>
+          <include name="testInValidCredential"/>
+          <include name="testHeader"/>
+        </methods>
+      </class> <!-- com.TestCase.LoginPage_TestCases -->
+      <class name="com.TestCase2.Register_Page_TestCase">
+        <methods>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- com.TestCase2.Register_Page_TestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
