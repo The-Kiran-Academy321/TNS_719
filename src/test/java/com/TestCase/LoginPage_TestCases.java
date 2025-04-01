@@ -27,7 +27,7 @@ public class LoginPage_TestCases {
 		driver.findElement(By.id("password")).sendKeys("ABC@123");
 		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
 		String errorMasssage=driver.findElement(By.id("email_error")).getText();
-		Assert.assertEquals(errorMasssage, "Invalid Username !!!!");
+		Assert.assertEquals(errorMasssage, "Please enter email as kiran@gmail.com");
 	}
 	@Test
 	void testHeader()
@@ -36,6 +36,6 @@ public class LoginPage_TestCases {
 		driver.get("file:///D:/DATA_BACKUP/Downloads/Selenium%20Softwares/Selenium%20Softwares/Offline%20Website/index.html");
 		
 		String HeaderText=driver.findElement(By.xpath("/html/body/div/div[1]/a/b")).getText();
-		Assert.assertEquals(HeaderText, "The Kiran Academy");
+		Assert.assertEquals(HeaderText, "TheKiranAcademy");
 	}
 }

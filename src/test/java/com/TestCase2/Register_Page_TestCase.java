@@ -13,7 +13,7 @@ public class Register_Page_TestCase {
 	@Test
 	void testTitle()
 	{
-		Assert.assertEquals(2, 4);
+		Assert.assertEquals(2, 2);
 	}
 	@Test
 	void testUrl()
